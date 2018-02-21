@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">AQ-Mon</string>
+    <string name="area1"></string>
+    <string name="area2"></string>
+    <string name="area3"></string>
+    <string name="area4"></string>
+    <string name="area5"></string>
+    <string name="area6"></string>
+    <string name="area7"></string>
+    <string name="area8"></string>
+    <string name="area9"></string>
+    <string name="area10"></string>
+    <string name="area11"></string>
+    <string name="area12"></string>
+    <string name="area13"></string>
+    <string name="area14"></string>
+    <string name="area15"></string>
+    <string name="area16"></string>
+    <string name="area17"></string>
+    <string name="area18"></string>
+    <string name="area19"></string>
+
+
 </resources>
