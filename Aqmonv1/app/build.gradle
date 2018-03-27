@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    useLibrary  'org.apache.http.legacy'
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
     defaultConfig {
@@ -10,7 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        useLibrary 'org.apache.http.legacy'
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: " AIzaSyD0hDbs16aIVVeq3NMNWH2xy0xgavIMCSg " )
     }
     buildTypes {
         release {
@@ -26,8 +27,14 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'org.jsoup:jsoup:1.9.1'
+    compile 'com.google.android.gms:play-services:9.8.0'
     compile 'de.codecrafters.tableview:tableview:2.8.0'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:support-v4:24.2.1'
     testCompile 'junit:junit:4.12'
+    compile 'org.apache.httpcomponents:httpcore:4.4.3'
+
 }
+apply plugin: 'com.google.gms.google-services'
